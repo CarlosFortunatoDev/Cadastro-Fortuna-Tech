@@ -1,11 +1,12 @@
 const formulario = document.querySelector("#formulario")
+const nomeCompleto = document.querySelector("#fullName")
 const buttonReset = document.querySelector("#reset")
 const salarioBase = document.querySelector("#salarioBase")
 const horasTrabalhadas = document.querySelector("#horasTrabalhadas")
 const horaExtra = document.querySelector("#horaExtra")
 const salarioTotal = document.querySelector("#salarioTotal")
 const calcular = document.querySelector("#calcular")
-
+const funcionario = document.querySelector("#funcionario")
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -23,6 +24,13 @@ document.addEventListener('DOMContentLoaded', () => {
   horaExtra.addEventListener('input', calcularSalario);
 
 })
+
+const adicionarFuncionario = () => {
+  const nomeFuncionario = nomeCompleto.value;
+  funcionario.textContent = nomeFuncionario
+}
+nomeCompleto.addEventListener('input', adicionarFuncionario);
+
 
 
 buttonReset.addEventListener("click", () => {
