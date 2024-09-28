@@ -11,7 +11,58 @@
     <div class="container">
         <h1 class="text-center align-middle">Cadastro de Funcionários</h1>
 
-    </div>
+        <form>
+            <!-- Nome: Nome completo do funcionário. -->
+            <div class="mb-3">
+                <label for="fullName" class="form-label">Nome Completo</label>
+                <input type="text" class="form-control" id="fullName">
+            </div>
+
+            <!-- Chapa: Número de identificação interno da empresa. -->
+            <div class="mb-3">
+                <label for="chapa" class="form-label">Chapa</label>
+                <input type="number" class="form-control" id="chapa">
+            </div>
+
+            <!-- RG: Documento de identificação pessoal. -->
+            <div class="mb-3">
+                <label for="rg" class="form-label">RG</label>
+                <input type="number" class="form-control" id="rg">
+            </div>
+
+            <!-- Dias Trabalhados: Total de dias trabalhados no mês, o que influencia diretamente no cálculo proporcional do salário. -->
+            <div class="mb-3">
+                <label for="diasTrabalhados" class="form-label">Dias Trabalhados</label>
+                <input type="number" class="form-control" id="diasTrabalhados">
+            </div>
+
+            <!-- Horas Extras: Quantidade de horas extras realizadas, que são adicionadas ao salário com o respectivo adicional. -->
+            <div class="mb-3">
+                <label for="horaExtra" class="form-label">Horas Extras</label>
+                <input type="number" class="form-control" id="horaExtra">
+            </div>
+
+            <!-- Salário Base: Remuneração mensal pré-estabelecida no contrato de trabalho. -->
+            <div class="mb-3">
+                <label for="salarioBase" class="form-label">Salário Base</label>
+                <input type="number" class="form-control" id="salarioBase">
+            </div>
+
+            <!-- Salário Contabilizado -->
+            <div class="mb-3">
+                <label for="salarioTotal" class="form-label" >Salário Contabilizado</label>
+                <input type="number" class="form-control" id="salarioTotal" disabled>
+            </div>
+
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="check">
+                <label class="form-check-label" for="check">Check</label>
+            </div>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
+        </form>
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
