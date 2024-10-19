@@ -7,6 +7,7 @@ const horasTrabalhadas = document.querySelector("#horasTrabalhadas")
 const horaExtra = document.querySelector("#horaExtra")
 const salarioTotal = document.querySelector("#salarioTotal")
 const calcular = document.querySelector("#calcular")
+const check = document.querySelector("#check")
 const funcionario = document.querySelector("#funcionario")
 
 
@@ -45,4 +46,5 @@ buttonReset.addEventListener("click", () => {
   for (let i = 0; i < formulario.length; i++) {
     formulario[i].value = ''
   }
+  check.checked = false
 })
