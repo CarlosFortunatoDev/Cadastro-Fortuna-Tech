@@ -20,10 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const ValorHoraExtra = parseFloat(horaExtra.value) || 0;
 
     if (valorJornadaDeTrabalho == 44){
-      const valorSalarioTotal = ((valorSalarioBase / 176) * ValorHorasTrabalhadas) + ((valorSalarioBase / 120) * ValorHoraExtra)
+      const valorSalarioTotal = ((valorSalarioBase / 176) * ValorHorasTrabalhadas) + ((valorSalarioBase / 176) * (ValorHoraExtra*2))
       salarioTotal.value = valorSalarioTotal.toFixed(2)
     } else if(valorJornadaDeTrabalho == 30){
-      const valorSalarioTotal = ((valorSalarioBase / 120) * ValorHorasTrabalhadas) + ((valorSalarioBase / 120) * ValorHoraExtra)
+      const valorSalarioTotal = ((valorSalarioBase / 120) * ValorHorasTrabalhadas) + ((valorSalarioBase / 120) * (ValorHoraExtra*2))
       salarioTotal.value = valorSalarioTotal.toFixed(2)
     }
   }
